@@ -1,5 +1,5 @@
 const MealsPage = () => {
-  return <div>Meals Page</div>
+  return <div>Meals Page Children</div>
 }
 
 export default MealsPage
