@@ -39,7 +39,7 @@ export default function ImageSlideshow() {
         <Image
           key={index}
           src={image.image}
-          className={index === currentImageIndex ? styles.active : ""}
+          className={index === currentImageIndex ? styles.active : undefined}
           alt={image.alt}
         />
       ))}

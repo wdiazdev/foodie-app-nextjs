@@ -1,10 +1,9 @@
-const MealsDetailsPage = ({ params }) => {
+export default async function MealsDetailsPage({ params }) {
+  const { mealSlug } = await params
   return (
     <div>
       <h1>MealsDetails Page</h1>
-      <span>{params.mealSlug}</span>
+      <span>{mealSlug}</span>
     </div>
   )
 }
-
-export default MealsDetailsPage
