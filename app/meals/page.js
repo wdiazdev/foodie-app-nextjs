@@ -4,7 +4,12 @@ import styles from "./page.module.css"
 import MealsGrid from "@/components/meals/meals-grid"
 import { getMeals } from "@/lib/meals"
 
-async function Meals() {
+export const metadata = {
+  title: "All Meals",
+  description: "Browse delicious meals.",
+}
+
+const Meals = async () => {
   const meals = await getMeals()
   return <MealsGrid meals={meals} />
 }
